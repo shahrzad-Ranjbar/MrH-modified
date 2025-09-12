@@ -1,0 +1,61 @@
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  margin-top: 150px;
+}
+
+.slide {
+  position: relative;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  background-color: aqua;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+  background-color: #ed1ce7;
+}
+@media only screen and (max-width: 700px) {
+  .slider {
+    margin-top: 70px;
+  }
+}
